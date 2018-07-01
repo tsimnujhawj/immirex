@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.navigation-head {
+    background-color: #0d1321;
+    height: auto;
+    padding: 20px;
+}
+
+#login-box {
+    color: #748cab;
+    float: right;
+    font-size: 20px;
+    padding-right: 25px;
+    text-decoration: underline solid #f0ebd8;
+}
+
+#logo h1 {
+    text-decoration: underline double white;
+}
+
+#logo {
+    color: #f0ebd8;
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#login-box a {
+    color: #748cab;
+    text-decoration: underline solid #f0ebd8;
+}
