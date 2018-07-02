@@ -17,10 +17,12 @@ $(document).ready(function() { // DOCUMENT READY OPENING
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
+    document.getElementById("user").style.display = "block";
     document.getElementById("login-box").style.display = "none";
     document.getElementById("logout-box").style.display = "block";
   } else {
     // No user is signed in.
+    document.getElementById("user").style.display = "none";
     document.getElementById("login-box").style.display = "block";
     document.getElementById("logout-box").style.display = "none";
   }
@@ -31,6 +33,7 @@ document.getElementById("login-submit").addEventListener("click", loginUser);
 function loginUser() {
     const username = document.getElementById("inputUserName").value;
     const password = document.getElementById("inputPassword").value;
+    document.getElementById("user").innerHTML = username;
 
     auth.signInWithEmailAndPassword(username, password).catch(function(error) {
       // Handle Errors here.

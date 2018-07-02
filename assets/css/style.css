@@ -22,6 +22,13 @@ body {
     text-decoration: underline solid #f0ebd8;
     display: none;
 }
+#user-box {
+    color: #748cab;
+    float: right;
+    font-size: 20px;
+    padding-right: 25px;
+    text-decoration: underline solid #f0ebd8;
+}
 
 #logo h1 {
     text-decoration: underline double white;
@@ -36,11 +43,6 @@ body {
     clear: both;
 }
 
-#login-box a {
-    color: #748cab;
-    text-decoration: underline solid #f0ebd8;
-}
-
 #logout-box {
     color: #748cab;
     float: right;
@@ -50,9 +52,14 @@ body {
     display: none;
 }
 
-#logout-box a {
+a {
     color: #748cab;
     text-decoration: underline solid #f0ebd8;
+}
+
+a:hover {
+    color: #ff3547;
+    text-decoration: underline double #f0ebd8;
 }
 
 .form-simple .font-small {
