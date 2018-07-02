@@ -17,12 +17,12 @@ $(document).ready(function() { // DOCUMENT READY OPENING
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    document.getElementById("user").style.display = "block";
+    document.getElementById("user-box").style.display = "block";
     document.getElementById("login-box").style.display = "none";
     document.getElementById("logout-box").style.display = "block";
   } else {
     // No user is signed in.
-    document.getElementById("user").style.display = "none";
+    document.getElementById("user-box").style.display = "none";
     document.getElementById("login-box").style.display = "block";
     document.getElementById("logout-box").style.display = "none";
   }
@@ -34,6 +34,7 @@ function loginUser() {
     const username = document.getElementById("inputUserName").value;
     const password = document.getElementById("inputPassword").value;
     document.getElementById("user").innerHTML = username;
+    initialize()
 
     auth.signInWithEmailAndPassword(username, password).catch(function(error) {
       // Handle Errors here.
@@ -52,6 +53,11 @@ document.getElementById("logout").addEventListener("click", function() {
     window.alert("There appears to be an issue. Try again!")
   });
 });
+
+function initialize() {
+  console.log("It works!")
+  document.body.style.backgroundImage = "url (../images/rushmore.jpg)"
+}
 
 
 }); // DOCUMENT READY CLOSING
