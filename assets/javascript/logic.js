@@ -22,6 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("logout-box").style.display = "block";
   } else {
     // No user is signed in.
+    document.body.style.backgroundImage = "url(assets/images/foggy_bridge.jpg)";
     document.getElementById("user-box").style.display = "none";
     document.getElementById("login-box").style.display = "block";
     document.getElementById("logout-box").style.display = "none";
@@ -56,7 +57,7 @@ document.getElementById("logout").addEventListener("click", function() {
 
 function initialize() {
   console.log("It works!")
-  document.body.style.backgroundImage = "url (../images/rushmore.jpg)"
+  document.body.style.backgroundImage = "url(assets/images/rushmore.jpg)";
 }
 
 

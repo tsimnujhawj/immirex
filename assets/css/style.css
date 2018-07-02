@@ -62,6 +62,21 @@ a:hover {
     text-decoration: underline double #f0ebd8;
 }
 
+.close {
+    margin: -10px 10px 0px 0px;
+}
+
+.intro-body {
+    border: 2px solid #0d1321;
+    border-radius: 5px;
+    background-color: #748cab;
+    height: 500px;
+    width: 960px;
+    margin: 20px auto;
+}
+
+
+/* Login Modal */
 .form-simple .font-small {
     font-size: 0.8rem; }
   
