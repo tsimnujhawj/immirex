@@ -41,7 +41,17 @@ body {
 }
 
 #logout {
-    
+    color: #748cab;
+    float: right;
+    font-size: 20px;
+    padding-right: 25px;
+    text-decoration: underline solid #f0ebd8;
+    display: none;
+}
+
+#logout-box a {
+    color: #748cab;
+    text-decoration: underline solid #f0ebd8;
 }
 
 .form-simple .font-small {
