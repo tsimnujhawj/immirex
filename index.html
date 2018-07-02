@@ -48,28 +48,43 @@
     <div class="modal" id="loginModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                        <h4 class="modal-title">Login</h4>
-                    <button class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    
-                    <form>
-                        <div class="form-group">
-                            <label for="inputUserName">Username</label>
-                            <input class="form-control" placeholder="Login Username" type="text" id="inputUserName">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword">Password</label>
-                            <input class="form-control" placeholder="Login Password" type="password" id="inputPassword">
-                        </div>
-                    </form>
 
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary btn-sm" id="login-submit">Login</button>
-                    <button class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
-                </div>
+                <section class="form-simple">
+                    <!--Form with header-->
+                    <div class="card">
+                
+                        <!--Header-->
+                        <div class="header pt-3 grey lighten-2">
+                
+                            <div class="row d-flex justify-content-start">
+                                <h3 class="deep-grey-text mt-3 mb-4 pb-1 mx-5">Log in</h3>
+                            </div>
+                        </div>
+                        <!--Header-->
+                
+                        <div class="card-body mx-4 mt-4">
+                
+                            <!--Body-->
+                            <div class="md-form">
+                                <input type="text" id="inputUserName" class="form-control">
+                                <label for="Form-email4">Your email</label>
+                            </div>
+                
+                            <div class="md-form pb-3">
+                                <input type="password" id="inputPassword" class="form-control">
+                                <label for="Form-pass4">Your password</label>
+                                <p class="font-small grey-text d-flex justify-content-end">Forgot <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a></p>
+                            </div>
+                
+                            <div class="text-center mb-4">
+                                <button type="button" class="btn btn-danger btn-block z-depth-2" id="login-submit" data-dismiss="modal">Log in</button>
+                            </div>
+                            <p class="font-small grey-text d-flex justify-content-center">Don't have an account? <a href="#" class="dark-grey-text font-weight-bold ml-1"> Sign up</a></p>
+                
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 $(document).ready(function() { // DOCUMENT READY OPENING
 
   // Initialize Firebase
-  let config = {
+  const config = {
     apiKey: "AIzaSyCvr9aO-x8SQyf2E5_go8RDgYFOGv_Bx_g",
     authDomain: "immirex-b56dd.firebaseapp.com",
     databaseURL: "https://immirex-b56dd.firebaseio.com",
@@ -11,23 +11,24 @@ $(document).ready(function() { // DOCUMENT READY OPENING
   };
   firebase.initializeApp(config);
 
-  let database = firebase.database().ref();
-  let provider = new firebase.auth.GoogleAuthProvider();
+  const database = firebase.database().ref();
+  const auth = firebase.auth();
 
 
 document.getElementById("login-submit").addEventListener("click", loginUser);
 
 function loginUser() {
-    let username = document.getElementById("inputUserName").value;
-    let password = document.getElementById("inputPassword").value;
+    const username = document.getElementById("inputUserName").value;
+    const password = document.getElementById("inputPassword").value;
     console.log(username);
     console.log(password);
-    console.log(dataUser)
 
-    // if (database.users.username === username) {
-    //     console.log("username matches!");
-    // }
-    // console.log("username DOES NOT MATCH");
+    const promise = auth.signInWithEmailAndPassword(username, password);
+    alert("You've logged in!");
+
+    promise.catch(function(err) {
+        alert("Login failed")
+    })
 
     
 }

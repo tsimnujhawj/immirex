@@ -40,10 +40,6 @@ body {
     text-decoration: underline solid #f0ebd8;
 }
 
-.modal-content {
-    background-color: #748cab;
-    color: #000;
-}
 
 .form-simple .font-small {
     font-size: 0.8rem; }
