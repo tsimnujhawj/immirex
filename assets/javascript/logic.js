@@ -14,23 +14,41 @@ $(document).ready(function() { // DOCUMENT READY OPENING
   const database = firebase.database().ref();
   const auth = firebase.auth();
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    document.getElementById("login-box").style.display = "none";
+    document.getElementById("logout-box").style.display = "block";
+  } else {
+    // No user is signed in.
+    document.getElementById("login-box").style.display = "block";
+    document.getElementById("logout-box").style.display = "none";
+  }
+});
 
 document.getElementById("login-submit").addEventListener("click", loginUser);
 
 function loginUser() {
     const username = document.getElementById("inputUserName").value;
     const password = document.getElementById("inputPassword").value;
-    console.log(username);
-    console.log(password);
 
-    const promise = auth.signInWithEmailAndPassword(username, password);
-    alert("You've logged in!");
-
-    promise.catch(function(err) {
-        alert("Login failed")
-    })
-
-    
+    auth.signInWithEmailAndPassword(username, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      window.alert(errorMessage);
+    });
 }
+
+document.getElementById("logout").addEventListener("click", function() {
+  auth.signOut().then(function() {
+    // Sign-out successful.
+    alert("You have signed out!")
+  }).catch(function(error) {
+    // An error happened.
+    window.alert("There appears to be an issue. Try again!")
+  });
+});
+
 
 }); // DOCUMENT READY CLOSING
