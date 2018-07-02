@@ -11,6 +11,9 @@ $(document).ready(function() { // DOCUMENT READY OPENING
   };
   firebase.initializeApp(config);
 
+  let database = firebase.database().ref();
+  let provider = new firebase.auth.GoogleAuthProvider();
+
 
 document.getElementById("login-submit").addEventListener("click", loginUser);
 
@@ -19,7 +22,12 @@ function loginUser() {
     let password = document.getElementById("inputPassword").value;
     console.log(username);
     console.log(password);
+    console.log(dataUser)
 
+    // if (database.users.username === username) {
+    //     console.log("username matches!");
+    // }
+    // console.log("username DOES NOT MATCH");
 
     
 }
