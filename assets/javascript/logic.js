@@ -17,9 +17,12 @@ $(document).ready(function() { // DOCUMENT READY OPENING
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
+    console.log(user)
+    document.getElementById("user").innerHTML = user.email;
     document.getElementById("user-box").style.display = "block";
     document.getElementById("login-box").style.display = "none";
     document.getElementById("logout-box").style.display = "block";
+    initialize()
   } else {
     // No user is signed in.
     document.body.style.backgroundImage = "url(assets/images/foggy_bridge.jpg)";
@@ -34,14 +37,12 @@ document.getElementById("login-submit").addEventListener("click", loginUser);
 function loginUser() {
     const username = document.getElementById("inputUserName").value;
     const password = document.getElementById("inputPassword").value;
-    document.getElementById("user").innerHTML = username;
-    initialize()
 
     auth.signInWithEmailAndPassword(username, password).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      window.alert(errorMessage);
+      window.alert(errorMessage + " " + errorCode);
     });
 }
 
