@@ -1,11 +1,5 @@
 $(document).ready(function() { // DOCUMENT READY OPENING
-
-  const allElements = document.querySelectorAll("#intro-field, #client-body, #forms-body, #search-body, #calender-body, #settings-body")
-  const bodyElements = [...allElements];
   
-  // bodyElements.forEach(element => {
-  //   console.log(element);
-  // })
 
   // Initialize Firebase
   const config = {
@@ -20,6 +14,7 @@ $(document).ready(function() { // DOCUMENT READY OPENING
 
   const database = firebase.database().ref();
   const auth = firebase.auth();
+
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -40,6 +35,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("login-box").style.display = "block";
   }
 });
+
 
 document.getElementById("login-submit").addEventListener("click", loginUser);
 
