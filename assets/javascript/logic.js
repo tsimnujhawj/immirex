@@ -85,33 +85,62 @@ function userAccess(){
 function homeAccess(){
   console.log("home access");
   document.getElementById("intro-field").style.display = "block";
-  document.getElementsByClassName("content-box").style.display = "none";
+  document.getElementById("client-body").style.display = "none";
+  document.getElementById("forms-body").style.display = "none";
+  document.getElementById("search-body").style.display = "none";
+  document.getElementById("calender-body").style.display = "none";
+  document.getElementById("settings-body").style.display = "none";
 }
 
 function clientAccess(){
   console.log("client access");
-  document.getElementsByClassName("content-box").style.display = "none";
+  document.getElementById("intro-field").style.display = "none";
   document.getElementById("client-body").style.display = "block";
+  document.getElementById("forms-body").style.display = "none";
+  document.getElementById("search-body").style.display = "none";
+  document.getElementById("calender-body").style.display = "none";
+  document.getElementById("settings-body").style.display = "none";
 }
 
 function formsAccess(){
   console.log("forms access");
-  document.getElementsByClassName("content-box").style.display = "none";
+  document.getElementById("intro-field").style.display = "none";
+  document.getElementById("client-body").style.display = "none";
+  document.getElementById("forms-body").style.display = "block";
+  document.getElementById("search-body").style.display = "none";
+  document.getElementById("calender-body").style.display = "none";
+  document.getElementById("settings-body").style.display = "none";
 }
 
 function searchAccess(){
   console.log("search access");
-  document.getElementsByClassName("content-box").style.display = "none";
+  document.getElementById("intro-field").style.display = "none";
+  document.getElementById("client-body").style.display = "none";
+  document.getElementById("forms-body").style.display = "none";
+  document.getElementById("search-body").style.display = "block";
+  document.getElementById("calender-body").style.display = "none";
+  document.getElementById("settings-body").style.display = "none";
 }
 
 function calenderAccess(){
   console.log("calender access");
-  document.getElementsByClassName("content-box").style.display = "none";
+  document.getElementById("intro-field").style.display = "none";
+  document.getElementById("client-body").style.display = "none";
+  document.getElementById("forms-body").style.display = "none";
+  document.getElementById("search-body").style.display = "none";
+  document.getElementById("calender-body").style.display = "block";
+  document.getElementById("settings-body").style.display = "none";
+
 }
 
 function settingsAccess(){
   console.log("settings access");
-  document.getElementsByClassName("content-box").style.display = "none";
+  document.getElementById("intro-field").style.display = "none";
+  document.getElementById("client-body").style.display = "none";
+  document.getElementById("forms-body").style.display = "none";
+  document.getElementById("search-body").style.display = "none";
+  document.getElementById("calender-body").style.display = "none";
+  document.getElementById("settings-body").style.display = "block";
 }
 
 }); // DOCUMENT READY CLOSING

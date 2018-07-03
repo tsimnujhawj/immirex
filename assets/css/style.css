@@ -106,19 +106,16 @@ a:hover {
     background-color: #f0ebd8;
 }
 
-.content-box {
-    /* border: 2px solid #1d2d44; */
+#client-body, #forms-body, #search-body, #calender-body, #settings-body {
     border-radius: 5px;
     background-color: rgb(29, 45, 68, 0.95);
     margin: 30px auto;
-    padding: 10px;
+    padding: 25px;
+    color: #f0ebd8;
+    text-align: center;
     display: none;
 }
 
-#client-content {
-    color: #f0ebd8;
-    text-align: center;
-}
 
 
 
