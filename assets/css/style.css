@@ -76,15 +76,15 @@ a:hover {
     background-color: rgb(29, 45, 68, 0.95);
     margin: 30px auto;
     padding: 10px;
-    height: 420px;
 }
 
 #intro-box {
     display: none;
 }
 
-.intro-field {
+#intro-field {
     color: #f0ebd8;
+    text-align: center;
     /* border: 1px solid white; */
 }
 
@@ -102,6 +102,13 @@ a:hover {
     border-radius: 5px; */
     padding: 10px;
 }
+
+
+
+
+
+
+
 
 /* Login Modal */
 .form-simple .font-small {

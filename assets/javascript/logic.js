@@ -61,8 +61,39 @@ document.getElementById("logout").addEventListener("click", function() {
 function initialize() {
   console.log("It works!")
   document.body.style.backgroundImage = "url(assets/images/rushmore.jpg)";
+  document.getElementById("home-access").addEventListener("click", homeAccess);
+  document.getElementById("client-access").addEventListener("click", clientAccess);
+  document.getElementById("forms-access").addEventListener("click", formsAccess);
+  document.getElementById("search-access").addEventListener("click", searchAccess);
+  document.getElementById("calender-access").addEventListener("click", calenderAccess);
+  document.getElementById("settings-access").addEventListener("click", settingsAccess);
   
 }
 
+function homeAccess(){
+  console.log("home access");
+  document.getElementById("intro-field").style.display = "block";
+}
+
+function clientAccess(){
+  console.log("client access");
+  document.getElementById("intro-field").style.display = "none";
+}
+
+function formsAccess(){
+  console.log("forms access");
+}
+
+function searchAccess(){
+  console.log("search access");
+}
+
+function calenderAccess(){
+  console.log("calender access");
+}
+
+function settingsAccess(){
+  console.log("settings access");
+}
 
 }); // DOCUMENT READY CLOSING
