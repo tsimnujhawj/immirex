@@ -71,7 +71,6 @@ a:hover {
 }
 
 .intro-body {
-    /* border: 2px solid #1d2d44; */
     border-radius: 5px;
     background-color: rgb(29, 45, 68, 0.95);
     margin: 30px auto;
@@ -103,7 +102,11 @@ a:hover {
     padding: 10px;
 }
 
-#client-body {
+.dropdown-menu {
+    background-color: #f0ebd8;
+}
+
+.content-box {
     /* border: 2px solid #1d2d44; */
     border-radius: 5px;
     background-color: rgb(29, 45, 68, 0.95);

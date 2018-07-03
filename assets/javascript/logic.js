@@ -1,5 +1,12 @@
 $(document).ready(function() { // DOCUMENT READY OPENING
 
+  const allElements = document.querySelectorAll("#intro-field, #client-body, #forms-body, #search-body, #calender-body, #settings-body")
+  const bodyElements = [...allElements];
+  
+  // bodyElements.forEach(element => {
+  //   console.log(element);
+  // })
+
   // Initialize Firebase
   const config = {
     apiKey: "AIzaSyCvr9aO-x8SQyf2E5_go8RDgYFOGv_Bx_g",
@@ -78,33 +85,33 @@ function userAccess(){
 function homeAccess(){
   console.log("home access");
   document.getElementById("intro-field").style.display = "block";
-  document.getElementById("client-body").style.display = "none";
+  document.getElementsByClassName("content-box").style.display = "none";
 }
 
 function clientAccess(){
   console.log("client access");
-  document.getElementById("intro-field").style.display = "none";
+  document.getElementsByClassName("content-box").style.display = "none";
   document.getElementById("client-body").style.display = "block";
 }
 
 function formsAccess(){
   console.log("forms access");
-  document.getElementById("intro-field").style.display = "none";
+  document.getElementsByClassName("content-box").style.display = "none";
 }
 
 function searchAccess(){
   console.log("search access");
-  document.getElementById("intro-field").style.display = "none";
+  document.getElementsByClassName("content-box").style.display = "none";
 }
 
 function calenderAccess(){
   console.log("calender access");
-  document.getElementById("intro-field").style.display = "none";
+  document.getElementsByClassName("content-box").style.display = "none";
 }
 
 function settingsAccess(){
   console.log("settings access");
-  document.getElementById("intro-field").style.display = "none";
+  document.getElementsByClassName("content-box").style.display = "none";
 }
 
 }); // DOCUMENT READY CLOSING
