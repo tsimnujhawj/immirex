@@ -66,25 +66,41 @@ a:hover {
     margin: -10px 10px 0px 0px;
 }
 
+.container-body {
+    width: 960px;
+}
+
 .intro-body {
     /* border: 2px solid #1d2d44; */
     border-radius: 5px;
     background-color: rgb(29, 45, 68, 0.95);
-    height: 500px;
-    width: 960px;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 10px;
+    height: 420px;
+}
+
+#intro-box {
+    display: none;
 }
 
 .intro-field {
     color: #f0ebd8;
+    /* border: 1px solid white; */
 }
 
 #menu-box {
     color: #f0ebd8;
 }
 
-.menu-list {
-    margin: 0 auto;
+.menu-list, h3 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel {
+    /* border: 3px solid white;
+    border-radius: 5px; */
+    padding: 10px;
 }
 
 /* Login Modal */
