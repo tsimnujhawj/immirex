@@ -19,16 +19,18 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
     console.log(user)
     document.getElementById("user").innerHTML = user.email;
-    document.getElementById("user-box").style.display = "block";
-    document.getElementById("login-box").style.display = "none";
     document.getElementById("logout-box").style.display = "block";
+    document.getElementById("user-box").style.display = "block";
+    document.getElementById("intro-box").style.display = "block";
+    document.getElementById("login-box").style.display = "none";
     initialize()
   } else {
     // No user is signed in.
     document.body.style.backgroundImage = "url(assets/images/foggy_bridge.jpg)";
-    document.getElementById("user-box").style.display = "none";
-    document.getElementById("login-box").style.display = "block";
     document.getElementById("logout-box").style.display = "none";
+    document.getElementById("user-box").style.display = "none";
+    document.getElementById("intro-box").style.display = "none";
+    document.getElementById("login-box").style.display = "block";
   }
 });
 

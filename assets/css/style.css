@@ -83,6 +83,10 @@ a:hover {
     color: #f0ebd8;
 }
 
+.menu-list {
+    margin: 0 auto;
+}
+
 /* Login Modal */
 .form-simple .font-small {
     font-size: 0.8rem; }
