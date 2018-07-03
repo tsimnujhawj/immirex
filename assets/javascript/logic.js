@@ -59,6 +59,7 @@ document.getElementById("logout").addEventListener("click", function() {
 function initialize() {
   console.log("It works!")
   document.body.style.backgroundImage = "url(assets/images/rushmore.jpg)";
+  
 }
 
 

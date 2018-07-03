@@ -67,14 +67,21 @@ a:hover {
 }
 
 .intro-body {
-    border: 2px solid #1d2d44;
+    /* border: 2px solid #1d2d44; */
     border-radius: 5px;
-    background-color: #1d2d44;
+    background-color: rgb(29, 45, 68, 0.95);
     height: 500px;
     width: 960px;
     margin: 20px auto;
 }
 
+.intro-field {
+    color: #f0ebd8;
+}
+
+#menu-box {
+    color: #f0ebd8;
+}
 
 /* Login Modal */
 .form-simple .font-small {
