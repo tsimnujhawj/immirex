@@ -76,6 +76,7 @@ function initialize() {
 
 function userAccess(){
   console.log("user access");
+  
 }
 
 function homeAccess(){
