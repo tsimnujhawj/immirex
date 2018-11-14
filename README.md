@@ -3,5 +3,3 @@ Immirex is a database application that helps immigration and application special
 
 ### Authors
 * Tsimnuj Hawj - Developer/Creator - [Tsimnuj Hawj](https://github.com/tsimnujhawj)
-### Acknowledgments
-* TODO
